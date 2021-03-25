@@ -49,6 +49,7 @@ function inputs() {
     // Перевірка на пусту базу данних
     if (localStorage.length > 0) {
       document.querySelector(".error").style.display = "none";
+      checkUser();
     } else {
       document.querySelector(".error").style.bottom = "360px";
       document.querySelector(".error").style.width = "192px";
@@ -56,7 +57,7 @@ function inputs() {
     }
 
     //Виклик функції - перевірки.
-    checkUser();
+
 
     //Зачистка полів
     email.value = "";
@@ -68,11 +69,11 @@ inputs();
 
 //Функція - перевірка
 function checkUser() {
-  let users = JSON.parse(localStorage.getItem(localStorage.key(0)));
+  let users = JSON.parse(localStorage.getItem('allUsers'));
   for (let i = 0; i < users.length; i++) {
-
     //Якщо знаходимо співпадіння по email && password в одному 'об'єкті-корисутвач' приховуємо блок і показуємо портфоліо.
     if (users[i].email == email.value && users[i].password == password.value) {
+      console.log('tre')
       document.querySelector(".error").style.display = "none";
       for (let q = 0; q < allInputs.length; q++) {
         allInputs[q].parentElement.firstElementChild.style.top = "21px";
@@ -88,6 +89,7 @@ function checkUser() {
     }
     //Якщо не знаходимо - видаємо помилку.
     else {
+      console.log('no')
       document.querySelector(".error").innerText = "Wrong email or password";
       document.querySelector(".error").style.bottom = "364px";
       document.querySelector(".error").style.width = "213px";
