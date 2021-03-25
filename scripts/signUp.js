@@ -8,7 +8,7 @@ let password = document.getElementById("password");
 
 //RegExp
 let checkN = /^[a-zA-Z]{3,15}$/;
-let checkE = /^[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,5}\.[a-zA-Z]{2,5}$/;
+let checkE = /^([a-zA-Z0-9]{1,}|[a-zA-Z0-9]{1,}\.[a-zA-Z0-9]{1,})@[a-zA-Z0-9]{1,5}\.[a-zA-Z]{2,5}$/;
 let checkP = /^[a-zA-Z0-9]{4,20}$/;
 
 //Змінні для test RegExp
