@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ededed;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.signUp {
+  width: 700px;
+  height: 700px;
+  margin: 100px auto;
+  text-align: center;
+  position: relative;
+}
+
+#f1 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.f1_inputs {
+  height: 70px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid #9d9a9a;
+  background-color: white;
+  position: relative;
+  outline: none;
+}
+
+.f1_inputs:hover {
+  box-shadow: 0px 0px 3px 6px #bd82f3;
+}
+
+.realInput {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+  font-size: 24px;
+}
+
+.realInput:focus {
+  box-shadow: 0px 0px 3px 6px #bd82f3;
+}
+
+.signUpf1 {
+  background-color: #7b6cff;
+  color: white;
+  font-size: 24px;
+}
+
+.signUpf1:hover {
+  background-color: #9287fa;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px #ffff;
+}
+
+.signInBtn {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+}
+
+.signInBtn:hover {
+  background-color: rgb(8, 155, 8);
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px #ffff;
+}
+
+.signInf1 {
+  width: 14%;
+  height: 20px;
+  margin-top: 5px;
+  background-color: #ededed;
+  color: #6262f3;
+  text-align: start;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.signInf1:hover {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+
+span {
+  position: absolute;
+  left: 15px;
+  top: 21px;
+  font-size: 24px;
+  color: #7c7c7c;
+  transition: all 0.2s ease;
+}
+
+.error {
+  width: 160px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  bottom: 128px;
+  left: 36px;
+  font-size: 20px;
+  padding: 3px;
+  display: none;
+}
+
+.portfolio {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 700px;
+  height: 700px;
+  margin: 100px auto;
+  background-color: white;
+  display: none;
+}
+
+img {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 216px;
+}
+
+.portfolio > span {
+  font-size: 31px;
+  margin-top: 12px;
+  color: #998d8d;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.portfolio > input[type="button"] {
+  width: 100%;
+  height: 50px;
+  margin-top: 131px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: #86c015;
+}
+
+.portfolio > input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #0db50d;
+}
+
+.portfolio > h1 {
+  text-align: center;
+}
+
+hr {
+  display: block;
+  width: 95px;
+  margin-top: 51px;
+  margin-left: 314px;
+  border-bottom: 1px solid #949494;
+}
